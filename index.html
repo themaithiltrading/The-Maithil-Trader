@@ -6,11 +6,12 @@
 <title>The Maithil Trader</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial,sans-serif;
+font-family:Arial, sans-serif;
 }
 
 body{
@@ -19,44 +20,58 @@ color:white;
 line-height:1.6;
 }
 
-<header>
+header{
+background:#111827;
+text-align:center;
+padding:40px 20px;
+border-bottom:3px solid #fbbf24;
+}
 
-<img src="themaithiltrader.png"
-alt="The Maithil Trader Logo"
-style="width:140px;border-radius:50%;margin-bottom:15px;">
-
-<h1>The Maithil Trader</h1>
-
-<p><strong>Founder: Er. Prakash Jha</strong></p>
-
-<p>Trade Smart • Stay Disciplined • Grow Consistently</p>
+.logo{
+width:180px;
+max-width:90%;
+border-radius:50%;
+margin-bottom:20px;
+box-shadow:0 0 20px rgba(251,191,36,0.4);
+}
 
 header h1{
 color:#fbbf24;
-font-size:2.2rem;
+font-size:42px;
+margin-bottom:10px;
+}
+
+header h3{
+font-weight:normal;
+margin-bottom:10px;
+}
+
+.tagline{
+font-size:18px;
+color:#ddd;
 }
 
 .hero{
-padding:80px 20px;
+padding:70px 20px;
 text-align:center;
 }
 
 .hero h2{
-font-size:3rem;
+font-size:38px;
 color:#fbbf24;
 margin-bottom:15px;
 }
 
 .hero p{
-font-size:1.2rem;
-max-width:700px;
+max-width:800px;
 margin:auto;
+font-size:18px;
 }
 
 .btn{
 display:inline-block;
 margin:10px;
-padding:12px 24px;
+padding:12px 25px;
 background:#22c55e;
 color:white;
 text-decoration:none;
@@ -71,44 +86,64 @@ padding:60px 10%;
 .section h2{
 text-align:center;
 color:#fbbf24;
-margin-bottom:25px;
+margin-bottom:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:#1e293b;
 padding:25px;
 border-radius:12px;
-margin-top:20px;
+}
+
+.card h3{
+color:#fbbf24;
+margin-bottom:10px;
 }
 
 footer{
 background:#111827;
-padding:25px;
 text-align:center;
-margin-top:50px;
-font-size:14px;
+padding:25px;
+margin-top:40px;
 }
+
 </style>
+
 </head>
 
 <body>
 
 <header>
+
+<img src="themaithiltrader.png" class="logo" alt="The Maithil Trader">
+
 <h1>The Maithil Trader</h1>
-<p>Trade Smart. Stay Disciplined. Grow Consistently.</p>
+
+<h3>Founder : Er. Prakash Jha</h3>
+
+<p class="tagline">
+Trade Smart • Stay Disciplined • Grow Consistently
+</p>
+
 </header>
 
 <section class="hero">
+
 <h2>Welcome Traders</h2>
 
 <p>
-Learn Forex Trading, Gold Trading, Risk Management and Trading Psychology
-through practical and easy-to-understand content.
+Learn Forex Trading, Gold Trading, Risk Management and Trading Psychology through practical and easy-to-understand content.
 </p>
 
 <br>
 
-<a class="btn" href="https://www.youtube.com/@TheMaithilTrader" target="_blank">
+<a href="https://www.youtube.com/@TheMaithilTrader" target="_blank" class="btn">
 YouTube Channel
 </a>
 
@@ -119,10 +154,41 @@ YouTube Channel
 <h2>About The Maithil Trader</h2>
 
 <div class="card">
+
 <p>
-The Maithil Trader is a trading education platform dedicated to helping traders
-improve their market understanding, discipline and long-term profitability.
+The Maithil Trader is a trading education platform founded by Er. Prakash Jha. Our mission is to help traders learn Forex Trading, Gold Trading, Risk Management and Trading Psychology in a practical way.
 </p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Learn Trading</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Forex Trading</h3>
+<p>Understand currency markets and trading strategies.</p>
+</div>
+
+<div class="card">
+<h3>Gold Trading</h3>
+<p>Learn Gold price action and market structure.</p>
+</div>
+
+<div class="card">
+<h3>Risk Management</h3>
+<p>Protect your capital with proper risk control.</p>
+</div>
+
+<div class="card">
+<h3>Trading Psychology</h3>
+<p>Master discipline and emotional control.</p>
+</div>
+
 </div>
 
 </section>
@@ -136,12 +202,12 @@ improve their market understanding, discipline and long-term profitability.
 <h3>XM Broker</h3>
 
 <p>
-Trade Forex, Gold, Indices and more through our trusted broker partner.
+Open your trading account through our trusted broker partner.
 </p>
 
 <br>
 
-<a class="btn" href="https://affs.click/VHnM4" target="_blank">
+<a href="https://affs.click/VHnM4" target="_blank" class="btn">
 Open XM Account
 </a>
 
@@ -155,16 +221,16 @@ Open XM Account
 
 <div class="card">
 
-<p>Email:</p>
+<h3>Email</h3>
 
-<h3>themaithiltrader@gmail.com</h3>
+<p>
+themaithiltrader@gmail.com
+</p>
 
 <br>
 
-<p>YouTube Channel:</p>
-
-<a class="btn" href="https://www.youtube.com/@TheMaithilTrader" target="_blank">
-Visit Channel
+<a href="https://www.youtube.com/@TheMaithilTrader" target="_blank" class="btn">
+Visit YouTube
 </a>
 
 </div>
@@ -178,7 +244,7 @@ Visit Channel
 <br>
 
 <p>
-Disclaimer: Trading involves risk. This website is for educational purposes only and should not be considered financial advice.
+Disclaimer: Trading involves substantial risk. This website is for educational purposes only and does not provide financial advice.
 </p>
 
 </footer>
