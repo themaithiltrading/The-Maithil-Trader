@@ -1,2 +1,2 @@
-# The-Maithil-Trader
+# TheMaithilTrader
 Official website of The Maithil Trader
