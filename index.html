@@ -143,9 +143,14 @@ padding:25px;
 border-radius:12px;
 }
 
-.card h3{
-color:#fbbf24;
-margin-bottom:10px;
+/* FORM INPUT */
+input, select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:6px;
+border:none;
+outline:none;
 }
 
 /* FOOTER */
@@ -171,6 +176,7 @@ margin-top:40px;
     <li><a href="#about">About</a></li>
     <li><a href="#learn">Learn</a></li>
     <li><a href="#broker">Platforms</a></li>
+    <li><a href="#register">Register</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -213,11 +219,9 @@ YouTube Channel
 <h2>About The Maithil Trader</h2>
 
 <div class="card">
-
 <p>
 The Maithil Trader is a trading education platform founded by Er. Prakash Jha. Our mission is to help traders learn Forex Trading, Gold Trading, Risk Management and Trading Psychology in a practical way.
 </p>
-
 </div>
 
 </section>
@@ -253,7 +257,7 @@ The Maithil Trader is a trading education platform founded by Er. Prakash Jha. O
 
 </section>
 
-<!-- BROKERS / PLATFORMS -->
+<!-- PLATFORMS -->
 <section class="section" id="broker">
 
 <h2>Recommended Platforms</h2>
@@ -263,7 +267,7 @@ The Maithil Trader is a trading education platform founded by Er. Prakash Jha. O
 <div class="card">
 
 <h3>XM Broker</h3>
-<p>Open your trading account through our trusted broker partner.</p>
+<p>Trusted broker for Forex trading.</p>
 <br>
 <a href="https://affs.click/VHnM4" target="_blank" class="btn">
 Open XM Account
@@ -274,13 +278,45 @@ Open XM Account
 <div class="card">
 
 <h3>Delta Exchange India</h3>
-<p>Trade crypto derivatives with advanced tools and fast execution.</p>
+<p>Crypto derivatives trading platform.</p>
 <br>
 <a href="https://india.delta.exchange/?code=MAUJWD" target="_blank" class="btn">
-Start Trading on Delta
+Start Trading
 </a>
 
 </div>
+
+</div>
+
+</section>
+
+<!-- REGISTER FORM -->
+<section class="section" id="register">
+
+<h2>Trader Profile Registration</h2>
+
+<div class="card">
+
+<form name="trader-profile" method="POST" data-netlify="true">
+
+<input type="hidden" name="form-name" value="trader-profile">
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+<input type="text" name="mobile" placeholder="Mobile Number" required>
+
+<input type="email" name="email" placeholder="Email ID" required>
+
+<input type="text" name="mt5_id" placeholder="MT5 ID" required>
+
+<select name="broker">
+<option value="XM">XM Broker</option>
+<option value="Delta Exchange">Delta Exchange India</option>
+</select>
+
+<button type="submit" class="btn">Submit Profile</button>
+
+</form>
 
 </div>
 
@@ -294,7 +330,6 @@ Start Trading on Delta
 <div class="card">
 
 <h3>Email</h3>
-
 <p>themaithiltrader@gmail.com</p>
 
 <br>
@@ -315,7 +350,7 @@ Visit YouTube
 <br>
 
 <p>
-Disclaimer: Trading involves substantial risk. This website is for educational purposes only and does not provide financial advice.
+Disclaimer: Trading involves high risk. This website is for educational purposes only.
 </p>
 
 </footer>
