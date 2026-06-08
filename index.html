@@ -3,378 +3,132 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Maithil Trader - Forex, Gold, Risk Management and Trading Psychology">
 <title>The Maithil Trader</title>
-
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#0f172a;color:#fff;line-height:1.6}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:12px 8%;background:#0b1220;border-bottom:1px solid #fbbf24;position:sticky;top:0}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:40px;height:40px;border-radius:50%}
+.logo-text{color:#fbbf24;font-weight:bold}
+.navbar ul{display:flex;gap:16px;list-style:none;flex-wrap:wrap}
+.navbar a{color:#fff;text-decoration:none}
+header{text-align:center;padding:50px 20px;background:#111827}
+.logo{width:180px;max-width:90%;border-radius:50%;margin-bottom:15px}
+h1,h2,h3{color:#fbbf24}
+.hero,.section{padding:60px 10%}
+.hero{text-align:center}
+.btn{display:inline-block;background:#22c55e;color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;margin:8px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#1e293b;padding:24px;border-radius:12px}
+footer{text-align:center;padding:30px;background:#111827;margin-top:40px}
+@media(max-width:768px){
+.navbar{flex-direction:column;gap:10px}
+.navbar ul{justify-content:center}
 }
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-background:#0f172a;
-color:white;
-line-height:1.6;
-}
-
-/* NAVBAR */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:12px 10%;
-background:#0b1220;
-position:sticky;
-top:0;
-z-index:1000;
-border-bottom:1px solid #fbbf24;
-}
-
-/* BRAND (LOGO + NAME) */
-.brand{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.brand img{
-width:35px;
-height:35px;
-border-radius:50%;
-object-fit:cover;
-box-shadow:0 0 10px rgba(251,191,36,0.5);
-}
-
-.logo-text{
-color:#fbbf24;
-font-size:20px;
-font-weight:bold;
-}
-
-/* MENU */
-.navbar ul{
-list-style:none;
-display:flex;
-gap:18px;
-}
-
-.navbar ul li a{
-color:white;
-text-decoration:none;
-transition:0.3s;
-font-size:14px;
-}
-
-.navbar ul li a:hover{
-color:#fbbf24;
-}
-
-/* HEADER */
-header{
-background:#111827;
-text-align:center;
-padding:40px 20px;
-border-bottom:3px solid #fbbf24;
-}
-
-.logo{
-width:180px;
-max-width:90%;
-border-radius:50%;
-margin-bottom:20px;
-box-shadow:0 0 20px rgba(251,191,36,0.4);
-}
-
-header h1{
-color:#fbbf24;
-font-size:42px;
-margin-bottom:10px;
-}
-
-header h3{
-font-weight:normal;
-margin-bottom:10px;
-}
-
-.tagline{
-font-size:18px;
-color:#ddd;
-}
-
-/* HERO */
-.hero{
-padding:70px 20px;
-text-align:center;
-}
-
-.hero h2{
-font-size:38px;
-color:#fbbf24;
-margin-bottom:15px;
-}
-
-.hero p{
-max-width:800px;
-margin:auto;
-font-size:18px;
-}
-
-.btn{
-display:inline-block;
-margin:10px;
-padding:12px 25px;
-background:#22c55e;
-color:white;
-text-decoration:none;
-border-radius:8px;
-font-weight:bold;
-}
-
-/* SECTIONS */
-.section{
-padding:60px 10%;
-}
-
-.section h2{
-text-align:center;
-color:#fbbf24;
-margin-bottom:30px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:#1e293b;
-padding:25px;
-border-radius:12px;
-}
-
-/* FORM */
-input, select{
-width:100%;
-padding:10px;
-margin:8px 0;
-border-radius:6px;
-border:none;
-outline:none;
-}
-
-/* FOOTER */
-footer{
-background:#111827;
-text-align:center;
-padding:25px;
-margin-top:40px;
-}
-
 </style>
-
 </head>
-
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
-
-  <div class="brand">
-    <img src="themaithiltrader.png" alt="logo">
-    <div class="logo-text">The Maithil Trader</div>
-  </div>
-
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#learn">Learn</a></li>
-    <li><a href="#broker">Platforms</a></li>
-    <li><a href="#register">Register</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
+<div class="brand">
+<img src="themaithiltrader.png" alt="logo">
+<div class="logo-text">The Maithil Trader</div>
+</div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#learn">Learn</a></li>
+<li><a href="#journey">Journey</a></li>
+<li><a href="#platforms">Platforms</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<!-- HEADER -->
-<header id="home">
-
+<header>
 <img src="themaithiltrader.png" class="logo" alt="The Maithil Trader">
-
 <h1>The Maithil Trader</h1>
-
-<h3>Founder : Er. Prakash Jha</h3>
-
-<p class="tagline">
-Trade Smart • Stay Disciplined • Grow Consistently
-</p>
-
+<p><strong>Founder: Er. Prakash Jha</strong></p>
+<p>Trade Smart • Stay Disciplined • Grow Consistently</p>
 </header>
 
-<!-- HERO -->
 <section class="hero">
-
-<h2>Welcome Traders</h2>
-
-<p>
-Learn Forex Trading, Gold Trading, Risk Management and Trading Psychology through practical and easy-to-understand content.
-</p>
-
+<h2>Master Forex, Gold & Risk Management</h2>
+<p>Learn practical trading concepts, market structure, risk management and trading psychology through educational content.</p>
 <br>
-
-<a href="https://www.youtube.com/@TheMaithilTrader" target="_blank" class="btn">
-YouTube Channel
-</a>
-
+<a class="btn" href="https://www.youtube.com/@TheMaithilTrader" target="_blank">YouTube Channel</a>
 </section>
 
-<!-- ABOUT -->
 <section class="section" id="about">
-
-<h2>About The Maithil Trader</h2>
-
+<h2>About Founder</h2>
 <div class="card">
-<p>
-The Maithil Trader is a trading education platform founded by Er. Prakash Jha. Our mission is to help traders learn Forex Trading, Gold Trading, Risk Management and Trading Psychology in a practical way.
-</p>
+<p>Er. Prakash Jha is a Civil Engineering Professional, Surveying Expert, Trader and Content Creator. His trading journey started in 2021 with a focus on Forex Trading, Gold Trading, Risk Management and Trading Psychology.</p>
 </div>
-
 </section>
 
-<!-- LEARN -->
 <section class="section" id="learn">
-
 <h2>Learn Trading</h2>
-
 <div class="cards">
-
-<div class="card">
-<h3>Forex Trading</h3>
-<p>Understand currency markets and trading strategies.</p>
+<div class="card"><h3>Forex Trading</h3><p>Currency market fundamentals and strategies.</p></div>
+<div class="card"><h3>Gold Trading</h3><p>Price action and market structure concepts.</p></div>
+<div class="card"><h3>Risk Management</h3><p>Protect capital and manage exposure.</p></div>
+<div class="card"><h3>Trading Psychology</h3><p>Discipline, mindset and consistency.</p></div>
 </div>
-
-<div class="card">
-<h3>Gold Trading</h3>
-<p>Learn Gold price action and market structure.</p>
-</div>
-
-<div class="card">
-<h3>Risk Management</h3>
-<p>Protect your capital with proper risk control.</p>
-</div>
-
-<div class="card">
-<h3>Trading Psychology</h3>
-<p>Master discipline and emotional control.</p>
-</div>
-
-</div>
-
 </section>
 
-<!-- BROKERS -->
-<section class="section" id="broker">
+<section class="section" id="journey">
+<h2>Trading Journey</h2>
+<div class="cards">
+<div class="card"><h3>2021</h3><p>Started trading journey.</p></div>
+<div class="card"><h3>2023</h3><p>Focused on Forex and Gold.</p></div>
+<div class="card"><h3>2025</h3><p>Launched YouTube channel.</p></div>
+<div class="card"><h3>2026</h3><p>Official website launch.</p></div>
+</div>
+</section>
 
+<section class="section" id="platforms">
 <h2>Recommended Platforms</h2>
-
 <div class="cards">
-
 <div class="card">
-
 <h3>XM Broker</h3>
-<p>Trusted Forex trading broker.</p>
-<br>
-<a href="https://affs.click/VHnM4" target="_blank" class="btn">
-Open XM Account
-</a>
-
+<p>Forex and CFD trading platform.</p>
+<a class="btn" href="https://affs.click/VHnM4" target="_blank">Open XM Account</a>
 </div>
-
 <div class="card">
-
-<h3>Delta Exchange India</h3>
-<p>Crypto derivatives trading platform.</p>
-<br>
-<a href="https://india.delta.exchange/?code=MAUJWD" target="_blank" class="btn">
-Start Trading
-</a>
-
+<h3>Delta Exchange</h3>
+<p>Crypto derivatives platform.</p>
+<a class="btn" href="https://india.delta.exchange/?code=MAUJWD" target="_blank">Start Trading</a>
 </div>
-
 </div>
-
 </section>
 
-<!-- REGISTER -->
-<section class="section" id="register">
-
-<h2>Trader Profile Registration</h2>
-
-<div class="card">
-
-<form name="trader-profile" method="POST" data-netlify="true">
-
-<input type="hidden" name="form-name" value="trader-profile">
-
-<input type="text" name="name" placeholder="Your Name" required>
-
-<input type="text" name="mobile" placeholder="Mobile Number" required>
-
-<input type="email" name="email" placeholder="Email ID" required>
-
-<input type="text" name="mt5_id" placeholder="MT5 ID" required>
-
-<select name="broker">
-<option>XM Broker</option>
-<option>Delta Exchange</option>
-</select>
-
-<button type="submit" class="btn">Submit Profile</button>
-
-</form>
-
+<section class="section">
+<h2>Coming Soon</h2>
+<div class="cards">
+<div class="card"><h3>Risk Calculator</h3></div>
+<div class="card"><h3>Lot Size Calculator</h3></div>
+<div class="card"><h3>Trading Journal</h3></div>
 </div>
-
 </section>
 
-<!-- CONTACT -->
 <section class="section" id="contact">
-
 <h2>Contact</h2>
-
 <div class="card">
-
-<h3>Email</h3>
-<p>themaithiltrader@gmail.com</p>
-
+<p>Email: themaithiltrader@gmail.com</p>
 <br>
-
-<a href="https://www.youtube.com/@TheMaithilTrader" target="_blank" class="btn">
-Visit YouTube
-</a>
-
+<a class="btn" href="https://www.youtube.com/@TheMaithilTrader" target="_blank">Visit YouTube</a>
 </div>
-
 </section>
 
-<!-- FOOTER -->
 <footer>
-
-<p>© 2026 The Maithil Trader</p>
-
+<p><strong>The Maithil Trader</strong></p>
+<p>Founder: Er. Prakash Jha</p>
+<p>themaithiltrader@gmail.com</p>
 <br>
-
-<p>
-Disclaimer: Trading involves high risk. This website is for educational purposes only.
-</p>
-
+<p>Disclaimer: Trading involves substantial risk. Content is for educational purposes only.</p>
+<br>
+<p>© 2026 The Maithil Trader</p>
 </footer>
 
 </body>
